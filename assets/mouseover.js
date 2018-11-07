@@ -1,3 +1,4 @@
+
 function playclip() 
 {
    if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) 
@@ -11,3 +12,4 @@ function playclip()
         audio.play();
     }
 }
+
