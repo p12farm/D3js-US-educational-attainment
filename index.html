@@ -19,13 +19,21 @@
 	
 </head>
   <header>
-       <nav>
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+   <div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	<span class="navbar-toggler-icon"></span>
+	
+	</button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav navbar-right" >
+      <li class="nav-item active"><a class="nav-link" href="#top"onmouseover="playclip();" >Top</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#national"onmouseover="playclip();" onclick="firstscript();">National</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#regional"onmouseover="playclip();"onclick="secondscript();">Regional</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#state"onmouseover="playclip();"onclick="thirdscript();">State-Level</a></li>
     <ul>
-      <li><a href="#top" onmouseover="playclip();">Top</a></li>
-      <li><a href="#national" onmouseover="playclip();">National</a></li>
-      <li><a href="#regional" onmouseover="playclip();">Regional</a></li>
-      <li><a href="#state" onmouseover="playclip();">State-Level</a></li>
-    <ul>
+   </div>
+   </div>
         </nav>
     </header>
 <body>
