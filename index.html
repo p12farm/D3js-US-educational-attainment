@@ -61,21 +61,62 @@
     </form>
 	<p></p>
     <div id="chart"></div>
+	</div>
+	
+	<!--<div class="hide" id="statelevel">-->
 	<a name="state"></a>
     <p><br><br></p>
-    <h2 class="subtitle" onmouseover="responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown','US English Female');" onmouseleave="responsiveVoice.cancel();">Education Level of Population in Schooling: State-level Breakdown</h2>
+    <h2 id="tittlestate" class="subtitle">Education Level of Population in Schooling: State-level Breakdown</h2>
+	
     <form id="stack-form">
         <div class="radio-toolbar">
             <input type="radio" id="radio1" name="mode" value="bypercent" checked>
-            <label for="radio1" onmouseover="responsiveVoice.speak('Students (in %)','US English Female');" onmouseleave="responsiveVoice.cancel();">Students (in %)</label>
+            <label for="radio1">Students (in %)</label>
             <input type="radio" id="radio2" name="mode" value="bycount">
-            <label for="radio2" onmouseover="responsiveVoice.speak('Students (in number of people)','US English Female');" onmouseleave="responsiveVoice.cancel();">Students (in number of people)</label>
-    </div>	
+            <label for="radio2">Students (in number of people)</label>
+    </div>
     </form>
     <div>
-        <svg id="stacked-bar-chart"></svg>
+        <svg id="stacked-bar-chart"  class=svg-responsive></svg>
     </div>
-
+	<!--</div>-->
+<script>
+	function firstscript() {
+	document.getElementById("tittleregion").style.display = "none";
+	document.getElementById("tittlestate").style.display = "none";
+	document.getElementById("tittlenation").style.display = "block";
+	document.getElementById("pie-chart").style.display = "block";
+	document.getElementById("tree-form").style.display = "none";
+	document.getElementById("stack-form").style.display = "none";
+        document.getElementById("chart").style.display = "none";
+	document.getElementById("stacked-bar-chart").style.display = "none";
+	
+	
+}
+	function secondscript() {
+	document.getElementById("tittleregion").style.display = "block";
+	document.getElementById("tittlestate").style.display = "none";
+	document.getElementById("tittlenation").style.display = "none";
+	document.getElementById("pie-chart").style.display = "none";
+	document.getElementById("tree-form").style.display = "block";
+	document.getElementById("stack-form").style.display = "none";
+        document.getElementById("chart").style.display = "block";
+	document.getElementById("stacked-bar-chart").style.display = "none";
+	
+	
+}
+	function thirdscript() {
+	document.getElementById("tittleregion").style.display = "none";
+	document.getElementById("tittlestate").style.display = "block";
+	document.getElementById("tittlenation").style.display = "none";
+	document.getElementById("pie-chart").style.display = "none";
+	document.getElementById("tree-form").style.display = "none";
+	document.getElementById("stack-form").style.display = "block";
+        document.getElementById("chart").style.display = "none";
+	document.getElementById("stacked-bar-chart").style.display = "block";
+	
+}
+	</script>
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
